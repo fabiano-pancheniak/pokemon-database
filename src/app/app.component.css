@@ -1,0 +1,9 @@
+.header{
+    background-color: #f3e56e;
+    border-bottom: solid 2px #877e2c;
+}
+
+.header div{
+    width: fit-content;
+    margin: auto;
+}

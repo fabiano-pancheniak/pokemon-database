@@ -1,0 +1,25 @@
+<div *ngIf="!isLoaded" class="loader">
+    <p>Loading Pokémon data{{loaderText}}</p>
+</div>
+
+<div *ngIf="isLoaded">
+    <div class="details-wrapper">
+        <section class="details-info">
+            <h2 class="info-name">{{poke?.name}}</h2>
+            <span class="type {{type.type.name}} info-type" *ngFor="let type of poke?.types"></span>
+        </section>
+        <section class="details-sprites">
+            <img class="sprites-artwork" src={{officialArtwork}} alt="">
+            <img class="sprites-gif" src={{pokemonGif}} alt="">
+        </section>
+        <div class="info-wrapper">
+            <section class="details-stats">
+                <span class="stats-stat" *ngFor="let stat of poke?.stats">
+                    <strong>{{stat.stat.name}}</strong> - {{stat.base_stat}}
+                </span>
+            </section>
+        </div>
+    </div>
+</div>
+
+

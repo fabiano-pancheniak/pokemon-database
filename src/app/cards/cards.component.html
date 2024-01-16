@@ -1,0 +1,9 @@
+<a class="details-link card-wrapper" [routerLink]="['/details', poke.id]">
+  <img class="card-artwork" src={{poke.pokeArtwork}} alt="">
+  <div class="card-info">
+    <h1 class="card-name">{{poke.name}}</h1>
+    <div class="card-type">
+      <span class='type sm {{type.type.name}}' *ngFor="let type of poke.types"></span>
+    </div>
+  </div>
+</a>

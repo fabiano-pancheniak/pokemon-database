@@ -1,0 +1,19 @@
+<div *ngIf="!isLoaded" class="loader">
+  <p>Loading Pokémon data{{loaderText}}</p>
+</div>
+<div *ngIf="isLoaded">
+  <div class="home-wrapper">
+    <section class="search">
+      <input type="text" placeholder="Search for a Pokémon..." (input)="search(filter.value)" #filter>
+    </section>
+    <div class="pokemon-not-found" *ngIf="pokeNotFound">Oops! We couldn't find a Pokemon with that name. Please try again.</div>
+    <section class="cards">
+      <app-cards
+      class="card-element"
+      *ngFor="let poke of filteredList"
+      [poke]="poke"
+      >
+    </app-cards>
+  </section>
+  </div>
+</div> 
