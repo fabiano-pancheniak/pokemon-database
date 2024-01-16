@@ -1,6 +1,7 @@
 # [Live Demo](https://pokemon-database-eight.vercel.app/)
 
 Pokémon cards where you can search by the name of the pokémon and get details about them.
+
 Data provided by [PokéAPI](https://pokeapi.co/).
 
 Built with Angular and Typescript.
