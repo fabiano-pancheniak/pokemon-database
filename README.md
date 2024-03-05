@@ -1,7 +1,6 @@
 # [Live Demo](https://pokemon-database-eight.vercel.app/)
 
-Pokémon cards where you can search by the name of the pokémon and get details about them.
-Cards de Pokémon onde é possível buscar pelo nome e selecionar o card para obter mais detalhes 
+Cards de Pokémon onde é possível buscar pelo nome e selecionar o card para obter mais detalhes.
 
 Dados da [PokéAPI](https://pokeapi.co/).
 
